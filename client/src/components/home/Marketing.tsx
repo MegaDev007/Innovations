@@ -3,11 +3,11 @@ import { MdCampaign } from "react-icons/md";
 
 export default function Marketing() {
   return (
-    <section className="py-20 text-white bg-blue-600">
+    <section className="py-20 text-white bg-[#20b8cd]">
       <div className="container px-4 mx-auto">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="flex items-center justify-center w-16 h-16 mx-auto mb-8 bg-blue-500 rounded-full">
-            <MdCampaign className="w-8 h-8" />
+          <div className="flex items-center justify-center w-16 h-16 mx-auto mb-8 bg-white rounded-full">
+            <MdCampaign className="w-8 h-8 text-[#20b8cd]" />
           </div>
           <h2 className="mb-6 text-4xl font-bold">
             Post Installation for Marketers!

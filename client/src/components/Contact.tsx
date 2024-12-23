@@ -12,7 +12,7 @@ export default function Contact() {
             subtitle="Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible."
           />
 
-          <div className="grid gap-8 md:grid-cols-2">
+          <div className="gap-8 ">
             <div className="p-8 bg-white shadow-lg rounded-xl">
               <form className="space-y-6">
                 <div>
@@ -47,53 +47,11 @@ export default function Contact() {
                 </div>
                 <button
                   type="submit"
-                  className="w-full px-6 py-3 text-white transition-colors bg-blue-600 rounded-lg hover:bg-blue-700"
+                  className="w-full px-6 py-3 text-white transition-colors bg-[#20b8cd] rounded-lg hover:bg-[#20b8cd]/80"
                 >
                   Send Message
                 </button>
               </form>
-            </div>
-
-            <div className="space-y-8">
-              <div className="p-6 bg-white shadow-lg rounded-xl">
-                <div className="flex items-center gap-4">
-                  <div className="flex items-center justify-center w-12 h-12 bg-blue-100 rounded-full">
-                    <MdPhone className="w-6 h-6 text-blue-600" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold">Phone</h3>
-                    <p className="text-gray-600">(713) 909-4915</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="p-6 bg-white shadow-lg rounded-xl">
-                <div className="flex items-center gap-4">
-                  <div className="flex items-center justify-center w-12 h-12 bg-blue-100 rounded-full">
-                    <MdEmail className="w-6 h-6 text-blue-600" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold">Email</h3>
-                    <p className="text-gray-600">contact@postinnovations.com</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="p-6 bg-white shadow-lg rounded-xl">
-                <div className="flex items-center gap-4">
-                  <div className="flex items-center justify-center w-12 h-12 bg-blue-100 rounded-full">
-                    <MdLocationOn className="w-6 h-6 text-blue-600" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold">Address</h3>
-                    <p className="text-gray-600">
-                      123 Post Avenue, Suite 100
-                      <br />
-                      Austin, TX 78701
-                    </p>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>

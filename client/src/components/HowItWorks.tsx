@@ -46,9 +46,9 @@ export default function HowItWorks() {
                 {index < steps.length - 1 && (
                   <div className="hidden lg:block absolute top-1/4 left-full w-full h-0.5 bg-blue-200 -z-10" />
                 )}
-                <div className="p-6 transition-shadow bg-white shadow-lg  rounded-xl hover:shadow-xl">
+                <div className="p-6 transition-shadow bg-white shadow-lg rounded-xl hover:shadow-xl">
                   <div className="flex items-center justify-center mx-auto mb-6 bg-blue-100 rounded-full w-14 h-14">
-                    <Icon className="text-blue-600 w-7 h-7" />
+                    <Icon className="text-[#20b8cd] w-7 h-7" />
                   </div>
                   <h3 className="mb-3 text-xl font-semibold text-center">
                     {step.title}

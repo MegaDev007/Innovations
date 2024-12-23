@@ -20,15 +20,15 @@ const features = [
 export default function ServicesPricing() {
   return (
     <section className="py-20 bg-gray-50">
-      <div className="container mx-auto px-4">
+      <div className="container px-4 mx-auto">
         <SectionTitle
           title="SERVICES AND PRICING"
           subtitle="Flexible solutions for your business needs"
         />
 
-        <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden">
+        <div className="max-w-4xl mx-auto overflow-hidden bg-white shadow-xl rounded-2xl">
           <div className="p-8 md:p-12">
-            <p className="text-lg text-gray-600 leading-relaxed mb-8">
+            <p className="mb-8 text-lg leading-relaxed text-gray-600">
               Submit your order online 24/7. We rent posts for as long as you
               need to rent them. Our services include the delivery and
               installation of your POST. When you want to remove your sign, let
@@ -37,7 +37,7 @@ export default function ServicesPricing() {
               out to remove the post for you.
             </p>
 
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="grid gap-6 md:grid-cols-3">
               {features.map((feature, index) => {
                 const Icon = feature.icon;
                 return (
@@ -45,10 +45,10 @@ export default function ServicesPricing() {
                     key={index}
                     className="flex items-center gap-4 p-4 rounded-lg bg-blue-50"
                   >
-                    <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
-                      <Icon className="w-6 h-6 text-blue-600" />
+                    <div className="flex items-center justify-center w-12 h-12 bg-blue-100 rounded-full">
+                      <Icon className="w-6 h-6 text-[#20b8cd]" />
                     </div>
-                    <span className="text-gray-700 font-medium">
+                    <span className="font-medium text-gray-700">
                       {feature.text}
                     </span>
                   </div>

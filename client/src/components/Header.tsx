@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { FaShoppingCart, FaBars, FaTimes } from "react-icons/fa";
 
 export default function Header() {
@@ -9,36 +10,38 @@ export default function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 border-b border-gray-100 bg-white/80 backdrop-blur-md">
       <nav className="container px-4 py-4 mx-auto">
         <div className="flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <div className="text-2xl font-bold text-blue-600">PostCraft</div>
-          </div>
-
+          <img
+            src="/logo.svg"
+            alt="Post Innovations Logo"
+            className="h-auto"
+            style={{ width: "10%" }}
+          />
           {/* Desktop Navigation */}
-          <div className="items-center hidden gap-4 ml-auto md:flex">
-            <a
-              href="#about"
+          <div className="items-center hidden gap-4 ml-auto text-lg md:flex">
+            <Link
+              to="/about"
               className="px-4 py-2 text-gray-600 transition-colors rounded-full hover:text-blue-600 hover:bg-gray-100"
             >
               About Us
-            </a>
-            <a
-              href="#services"
+            </Link>
+            <Link
+              to="/services"
               className="px-4 py-2 text-gray-600 transition-colors rounded-full hover:text-blue-600 hover:bg-gray-100"
             >
               Services
-            </a>
-            <a
-              href="#contact"
+            </Link>
+            <Link
+              to="/contact"
               className="px-4 py-2 text-gray-600 transition-colors rounded-full hover:text-blue-600 hover:bg-gray-100"
             >
               Contact
-            </a>
-            <a
-              href="/login"
+            </Link>
+            <Link
+              to="/login"
               className="px-4 py-2 text-gray-600 transition-colors rounded-full hover:text-blue-600 hover:bg-gray-100"
             >
               Login
-            </a>
+            </Link>
             <button className="px-6 py-2 text-white transition-colors bg-blue-600 rounded-full hover:bg-blue-700">
               Order Now
             </button>
